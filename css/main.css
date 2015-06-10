@@ -10,9 +10,7 @@ body {
   	position: relative;
   	z-index: 1;
 }
-* {
-  outline: red 1px solid;
-}
+
 .ryu {
     width: 659px;
     height: 494px;
@@ -45,7 +43,7 @@ body {
   background-image: url('../images/hadouken.gif');
   width: 156px; 
   height: 90px;
-  /*display: none;*/
+  display: none;
   position: absolute;
   z-index: 10;
   top: 170px;
