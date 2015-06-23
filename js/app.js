@@ -21,12 +21,11 @@ $(document).ready(function() {
   			}
 		);
   	})
-  	.keydown(function(e) {
-  		var keycode = e.which;
-  		if (keycode==88) {
+  	/*.keydown(function(e) {
+  		if (e.which == 88) {
   		$('.ryu-cool').show();
   		}
-  	});
+  	});*/
   	.mouseup(function() {
   		$('.ryu-throwing').hide();
   		$('.ryu-ready').show();
