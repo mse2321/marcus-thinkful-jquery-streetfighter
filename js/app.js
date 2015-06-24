@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
  	$('.ryu').mouseenter(function() {
 	    $('.ryu-still').hide();
 	    $('.ryu-ready').show();
@@ -42,4 +43,5 @@ $(document).ready(function() {
   			$('.ryu-still').show();
   		}
   	});
+    $('#main-text').html("<span id='main-title'>RYU</span><br />Get Ryu ready by hoving over him<br />Click on him to fire Hadouken<br />Press the X key for a cool pose");
 });
