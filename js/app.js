@@ -16,16 +16,11 @@ $(document).ready(function() {
 		  500,
 		function() 
 			{
-			$(this).hide();
-			$(this).css('left', '520px');
+				$(this).hide();
+				$(this).css('left', '520px');
   			}
 		);
   	})
-  	/*.keydown(function(e) {
-  		if (e.which == 88) {
-  		$('.ryu-cool').show();
-  		}
-  	});*/
   	.mouseup(function() {
   		$('.ryu-throwing').hide();
   		$('.ryu-ready').show();
@@ -35,4 +30,16 @@ $(document).ready(function() {
   		$('#hadouken-sound')[0].load();
   		$('#hadouken-sound')[0].play();
 	}
+	$('body').on('keydown', function(e){
+  		if (e.which == 88) {
+  			$('.ryu-others').hide();
+  			$('.ryu-cool').show();
+  		}
+  	});
+  	$('body').on('keyup', function(e){
+  		if (e.which == 88) {
+  			$('.ryu-cool').hide();
+  			$('.ryu-still').show();
+  		}
+  	});
 });
